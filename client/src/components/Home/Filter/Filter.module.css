@@ -1,0 +1,19 @@
+.container {
+    margin: 20px 0;
+}
+
+.inner {
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 15px !important;
+    text-align: center;
+}
+
+.formInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,0 +1,7 @@
+Index    GET     /blogs          - display list
+New      GET     /blog/new       - show form to make blog
+Create   POST    /blogs          - add new blog to db
+Show     GET     /blogs/:id      - show blog info, then redirect
+Edit     GET     /blogs/:id/edit - show edit form
+Update   PUT     /blogs/:id      - update particular blog, that redirect
+Destroy  DELETE  /blogs/:id      - Delete a particular blog, then redirect

@@ -1,0 +1,16 @@
+{
+    "name": "coursework",
+    "version": "0.0.0",
+    "private": true,
+    "main": "server/dist/index",
+    "scripts": {
+        "start": "cd server && npm run heroku-start",
+        "deploy": "git add . && git commit -m Heroku && git push heroku main",
+        "heroku-prebuild": "npm install --only=dev",
+        "heroku-postbuild": "(cd client && npm i && npm run build && cd ..) && (cd server && npm i && npm run build)"
+    },
+    "engines": {
+        "node": "14.x",
+        "npm": "6.x"
+    }
+}
